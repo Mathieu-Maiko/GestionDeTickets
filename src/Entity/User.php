@@ -117,40 +117,4 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
     }
-
-    public function getCategorie(): ?Categorie
-    {
-        return $this->categorie;
-    }
-
-    public function setCategorie(?Categorie $categorie): static
-    {
-        $this->categorie = $categorie;
-
-        return $this;
-    }
-
-    public function getStatut(): ?Statut
-    {
-        return $this->Statut;
-    }
-
-    public function setStatut(?Statut $Statut): static
-    {
-        $this->Statut = $Statut;
-
-        return $this;
-    }
-
-    public function getUser(): ?self
-    {
-        return $this->User;
-    }
-
-    public function setUser(?self $User): static
-    {
-        $this->User = $User;
-
-        return $this;
-    }
 }

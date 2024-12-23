@@ -26,10 +26,15 @@ class Categorie
         return $this->nomStatut;
     }
 
-    public function setNomStatut(string $nomStatut): static
+    public function setNomStatut(string $nomStatut): self
     {
         $this->nomStatut = $nomStatut;
 
         return $this;
+    }
+
+    public function __toString(): string
+    {
+        return $this->name;
     }
 }
